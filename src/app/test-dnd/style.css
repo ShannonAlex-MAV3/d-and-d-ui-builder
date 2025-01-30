@@ -1,0 +1,30 @@
+.canvas {
+    width: 100%;
+    height: 600px;
+    border: 2px dashed #ccc;
+    position: relative;
+  }
+  
+  .draggable {
+    padding: 10px;
+    margin: 5px;
+    border: 1px solid #999;
+    background: #f0f0f0;
+    cursor: move;
+  }
+  
+  .dropped-component {
+    border: 1px solid #09f;
+    background: rgba(0, 153, 255, 0.1);
+    padding: 10px;
+  }
+  
+  .resize-handle {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    width: 10px;
+    height: 10px;
+    background: #09f;
+    cursor: nwse-resize;
+  }
