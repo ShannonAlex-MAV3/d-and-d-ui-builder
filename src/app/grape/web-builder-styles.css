@@ -1,0 +1,101 @@
+.app-container {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .panel__top {
+    padding: 0;
+    width: 100%;
+    display: flex;
+    position: initial;
+    justify-content: center;
+    justify-content: space-between;
+  }
+  
+  .panel__basic-actions {
+    position: initial;
+  }
+  
+  .editor-row {
+    display: flex;
+    justify-content: flex-start;
+    align-items: stretch;
+    flex-grow: 1;
+  }
+  
+  .editor-canvas {
+    flex-grow: 1;
+  }
+  
+  .panel__right {
+    flex-basis: 280px;
+    position: absolute;
+    overflow-y: auto;
+    background-color: #f5f5f5;
+    top: 0;
+  }
+  
+  #blocks {
+    height: auto;
+    padding: 1rem;
+    min-height: 200px;
+  }
+  
+  .gjs-blocks-c {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+  }
+  
+  .gjs-block {
+    width: calc(50% - 1rem);
+    min-height: 90px;
+    margin: 0.5rem;
+    background-color: white;
+    border-radius: 3px;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.12);
+    transition: transform 0.2s ease;
+  }
+  
+  .gjs-block:hover {
+    transform: scale(1.02);
+  }
+  
+  .gjs-block-label {
+    font-size: 0.75rem;
+  }
+  
+  #layers-container {
+    height: auto;
+    padding: 1rem;
+    min-height: 200px;
+    border-bottom: 1px solid #ddd;
+  }
+  
+  #styles-container {
+    height: auto;
+    padding: 1rem;
+    min-height: 200px;
+    border-bottom: 1px solid #ddd;
+  }
+  
+  /* Make sure GrapeJS UI elements are visible */
+  .gjs-cv-canvas {
+    width: 100%;
+    height: 100%;
+    top: 0;
+  }
+  
+  .button {
+    padding: 10px 20px;
+    border-radius: 3px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    cursor: pointer;
+  }
+  
+  .button:hover {
+    background-color: #0056b3;
+  }
